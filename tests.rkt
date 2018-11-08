@@ -22,7 +22,16 @@
 (define (test_ins_beg1)
   (eq? (ins_beg 1 '(2 3 4)) '(1 2 3 4)))
 
-;End test functions
+;Q2
+(ins_beg 'a '(b c d))
+(ins_beg '(a b) '(b c d))
+(ins_end 'a '(b c d))
+(ins_end '(a b) '(b c d))
+(count_top_level '(1 2 3 (4 5)))
+(count_instances_tr 1 '(1 1 2 3 1))
+(count_instances 1 '(1 1 2 3 1))
+(count_instances_deep 1 '(1 2 3 (1 1)) )
+
 
 ;Run the tests
 (runTests)
